@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <!-- game.playstation tree view -->
+    <record id="game_playstation_view_tree" model="ir.ui.view">
+        <field name="name">List Playstation available</field>
+        <field name="model">game.playstation</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="description"/>
+                <field name="controller"/>
+                <field name="stock"/>
+                <field name="price"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- game.playstation form view -->
+    <record id="game_playstation_view_form" model="ir.ui.view">
+        <field name="name">Input Console</field>
+        <field name="model">game.playstation</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group string='Input New Console'>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="controller"/>
+                        <field name="stock"/>
+                        <field name="price"/>
+                        
+                    </group>
+                    <notebook>
+                        <page string="Deskripsi">
+                            <field name="description"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- game.playstation action window -->
+    <record id="game_playstation_action" model="ir.actions.act_window">
+        <field name="name">Playstation</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">game.playstation</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+        id="game_playstation_menu_act" 
+        name="Playstation" 
+        parent="game_playstation_menu_categ" 
+        action="game_playstation_action" 
+        sequence="10"/>
+</odoo>

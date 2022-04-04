@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    
+    <menuitem
+        id="game_menu_root"
+        name="Game Store"
+        sequence="10"/>
+
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="game_playstation_menu_categ" 
+        name="Console" 
+        parent="game_menu_root" 
+        sequence="10"/>
+
+    <menuitem
+        id="game_controller_menu_categ"
+        name="Controller"
+        parent="game_menu_root"
+        sequence="20"/>
+</odoo>

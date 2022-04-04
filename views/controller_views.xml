@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <!-- game.controller tree view -->
+    <record id="game_controller_view_tree" model="ir.ui.view">
+        <field name="name">Controller</field>
+        <field name="model">game.controller</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="color"/>
+                <field name="description"/>
+                <field name="stock"/>
+                <field name="price"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- game.controller form view -->
+    <record id="model_name_view_form" model="ir.ui.view">
+        <field name="name">Controller.view.form</field>
+        <field name="model">game.controller</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group string='Input New Controller'>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="color"/>
+                        <field name="stock"/>
+                        <field name="price"/>
+                    </group>
+                    <notebook>
+                        <page string="Deskripsi">
+                            <field name="description"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- game.controller action window -->
+    <record id="game_controller_action" model="ir.actions.act_window">
+        <field name="name">Controller</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">game.controller</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+        id="game_controller_menu_act" 
+        name="Controller" 
+        parent="game_controller_menu_categ" 
+        action="game_controller_action" 
+        sequence="10"/>
+</odoo>
