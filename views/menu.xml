@@ -19,4 +19,17 @@
         name="Controller"
         parent="game_menu_root"
         sequence="20"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="game_game_menu_categ" 
+        name="Accessories" 
+        parent="game_menu_root" 
+        sequence="30"/>
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="game_partner_menu_categ" 
+        name="Partner" 
+        parent="game_menu_root" 
+        sequence="40"/>
 </odoo>

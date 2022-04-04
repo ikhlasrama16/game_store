@@ -31,7 +31,9 @@
         'views/menu.xml',
         'views/playstation_views.xml',
         'views/controller_views.xml',
-        
+        'views/game_views.xml',
+        'views/customer_views.xml',
+        'views/pegawai_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
