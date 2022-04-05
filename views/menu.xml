@@ -6,30 +6,35 @@
         name="Game Store"
         sequence="10"/>
 
-
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="game_order_menu_categ" 
+        name="Order" 
+        parent="game_menu_root" 
+        sequence="10"/>
     <!-- This Menu Item Must have a parent -->
     <menuitem 
         id="game_playstation_menu_categ" 
         name="Console" 
         parent="game_menu_root" 
-        sequence="10"/>
+        sequence="20"/>
 
     <menuitem
         id="game_controller_menu_categ"
         name="Controller"
         parent="game_menu_root"
-        sequence="20"/>
+        sequence="30"/>
 
     <!-- This Menu Item Must have a parent -->
     <menuitem 
         id="game_game_menu_categ" 
         name="Accessories" 
         parent="game_menu_root" 
-        sequence="30"/>
+        sequence="40"/>
     <!-- This Menu Item Must have a parent -->
     <menuitem 
         id="game_partner_menu_categ" 
         name="Partner" 
         parent="game_menu_root" 
-        sequence="40"/>
+        sequence="50"/>
 </odoo>

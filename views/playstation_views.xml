@@ -30,7 +30,6 @@
                         <field name="controller"/>
                         <field name="stock"/>
                         <field name="price"/>
-                        
                     </group>
                     <notebook>
                         <page string="Deskripsi">

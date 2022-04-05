@@ -9,6 +9,7 @@
                 <!-- Add your fields here -->
                 <field name="name"/>
                 <field name="color"/>
+                <field name="tipe"/>
                 <field name="description"/>
                 <field name="stock"/>
                 <field name="price"/>
@@ -26,6 +27,7 @@
                     <group string='Input New Controller'>
                         <!-- Add your fields here -->
                         <field name="name"/>
+                        <field name="tipe"/>
                         <field name="color"/>
                         <field name="stock"/>
                         <field name="price"/>
