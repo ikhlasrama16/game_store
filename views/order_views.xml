@@ -6,11 +6,18 @@
         <field name="model">game.order</field>
         <field name="arch" type="xml">
             <tree>
+                <header>
+                  <button name="invoice" string="Buat Invoice" class="btn btn-success" type="object"/>                  
+                </header> 
                 <!-- Add your fields here -->
                 <field name="kode_order"/>
                 <field name="tanggal_pesan"/>
                 <field name="pemesan"/>
+                <field name="total"/>
                 <field name="orderplaystation_ids"/>
+                <field name="ordercontroller_ids"/>
+                <field name="ordergame_ids"/>
+                <field name="sudah_dibayar"/>
             </tree>
         </field>
     </record>
@@ -30,8 +37,24 @@
                             <tree editable='bottom'>
                                 <field name="playstation_id"/>
                                 <field name="qty"/>
-                                <field name="harga_satuan"/>
-                                <field name="harga"/>
+                                <field name="unit_price"/>
+                                <field name="price"/>
+                            </tree>
+                        </field>
+                        <field name="ordercontroller_ids">
+                            <tree editable='bottom'>
+                                <field name="controller_id"/>
+                                <field name="qty"/>
+                                <field name="unit_price"/>
+                                <field name="price"/>
+                            </tree>
+                        </field>
+                        <field name="ordergame_ids">
+                            <tree editable='bottom'>
+                                <field name="game_id"/>
+                                <field name="qty"/>
+                                <field name="unit_price"/>
+                                <field name="price"/>
                             </tree>
                         </field>
                     </group>
