@@ -10,7 +10,7 @@ class Order(models.Model):
     ordercontroller_ids = fields.One2many(comodel_name='game.ordercontrollerdetail', inverse_name='orderc_id', string='Controller')
     ordergame_ids = fields.One2many(comodel_name='game.ordergamedetail', inverse_name='orderg_id', string='Game')
 
-    kode_order = fields.Char(string='Kode Order', required=True)
+    name = fields.Char(string='Kode Order', required=True)
     tanggal_pesan = fields.Datetime('Tanggal Pemesanan',default=fields.Datetime.now())
     pemesan = fields.Many2one(
         comodel_name='res.partner', 

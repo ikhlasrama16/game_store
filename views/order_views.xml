@@ -10,7 +10,7 @@
                   <button name="invoice" string="Buat Invoice" class="btn btn-success" type="object"/>                  
                 </header> 
                 <!-- Add your fields here -->
-                <field name="kode_order"/>
+                <field name="name"/>
                 <field name="tanggal_pesan"/>
                 <field name="pemesan"/>
                 <field name="total"/>
@@ -30,7 +30,7 @@
                 <sheet>
                     <group>
                         <!-- Add your fields here -->
-                        <field name="kode_order"/>
+                        <field name="name"/>
                         <field name="tanggal_pesan"/>
                         <field name="pemesan"/>
                         <field name="orderplaystation_ids">
