@@ -1,5 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_game_playstation,access.game.playstation,model_game_playstation,,1,1,1,1
+access_game_nintendo,access.game.nintendo,model_game_nintendo,,1,1,1,1
 access_game_controller,access.game.controller,model_game_controller,,1,1,1,1
 access_game_game,access.game.game,model_game_game,,1,1,1,1
 access_game_order,access.game.order,model_game_order,,1,1,1,1

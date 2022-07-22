@@ -30,6 +30,7 @@
         'views/templates.xml',
         'views/menu.xml',
         'views/playstation_views.xml',
+        'views/nintendo_views.xml',
         'views/controller_views.xml',
         'views/game_views.xml',
         'views/customer_views.xml',

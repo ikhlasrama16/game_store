@@ -14,7 +14,7 @@
         sequence="10"/>
     <!-- This Menu Item Must have a parent -->
     <menuitem 
-        id="game_playstation_menu_categ" 
+        id="game_console_menu_categ" 
         name="Console" 
         parent="game_menu_root" 
         sequence="20"/>

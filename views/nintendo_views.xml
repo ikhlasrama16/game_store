@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <odoo>
 
-    <!-- game.playstation tree view -->
-    <record id="game_playstation_view_tree" model="ir.ui.view">
-        <field name="name">List Playstation available</field>
-        <field name="model">game.playstation</field>
+    <!-- game.nintendo tree view -->
+    <record id="game_nintendo_view_tree" model="ir.ui.view">
+        <field name="name">List Ninendo available</field>
+        <field name="model">game.nintendo</field>
         <field name="arch" type="xml">
             <tree>
                 <!-- Add your fields here -->
@@ -16,11 +16,10 @@
             </tree>
         </field>
     </record>
-
-    <!-- game.playstation form view -->
-    <record id="game_playstation_view_form" model="ir.ui.view">
+    <!-- game.ninendo form view -->
+    <record id="game_nintendo_view_form" model="ir.ui.view">
         <field name="name">Input Console</field>
-        <field name="model">game.playstation</field>
+        <field name="model">game.ninendo</field>
         <field name="arch" type="xml">
             <form string="">
                 <sheet>
@@ -40,18 +39,20 @@
             </form>
         </field>
     </record>
-    <!-- game.playstation action window -->
-    <record id="game_playstation_action" model="ir.actions.act_window">
-        <field name="name">Playstation</field>
+    <!-- game.nintendo action window -->
+    <record id="game_nintendo_action" model="ir.actions.act_window">
+        <field name="name">Ninendo</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">game.playstation</field>
+        <field name="res_model">game.nintendo</field>
         <field name="view_mode">tree,form</field>
+        <field name="view_type">form</field>
     </record>
-    <!-- This Menu Item must have a parent and an action -->
+<!-- This Menu Item must have a parent and an action -->
     <menuitem 
-        id="game_playstation_menu_act" 
-        name="Playstation" 
-        parent="game_console_menu_categ" 
-        action="game_playstation_action" 
-        sequence="10"/>
+    id="game_nintendo_menu_act" 
+    name="Ninendo" 
+    parent="game_console_menu_categ" 
+    action="game_nintendo_action" 
+    sequence="20"/>    
 </odoo>
+
